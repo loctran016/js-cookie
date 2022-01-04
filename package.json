@@ -1,14 +1,17 @@
 {
   "name": "js-cookie",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "A simple, lightweight JavaScript API for handling cookies",
   "browser": "dist/js.cookie.js",
   "module": "dist/js.cookie.mjs",
   "unpkg": "dist/js.cookie.min.js",
   "jsdelivr": "dist/js.cookie.min.js",
   "exports": {
-    "import": "./dist/js.cookie.mjs",
-    "require": "./dist/js.cookie.js"
+    ".": {
+      "import": "./dist/js.cookie.mjs",
+      "require": "./dist/js.cookie.js"
+    },
+    "./package.json": "./package.json"
   },
   "directories": {
     "test": "test"
@@ -49,7 +52,7 @@
     "grunt": "^1.0.4",
     "grunt-compare-size": "^0.4.2",
     "grunt-contrib-connect": "^3.0.0",
-    "grunt-contrib-nodeunit": "^3.0.0",
+    "grunt-contrib-nodeunit": "^4.0.0",
     "grunt-contrib-qunit": "^3.1.0",
     "grunt-contrib-watch": "^1.1.0",
     "grunt-exec": "^3.0.0",
